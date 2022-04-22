@@ -20,7 +20,7 @@ export function Input({ name, label, ...rest}: InputProps) {
                     bgColor: 'gray.900'
                 }}
                 size='lg'
-                ...rest
+                {...rest}
             />
         </FormControl>
     )
