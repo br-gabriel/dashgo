@@ -1,13 +1,14 @@
 import { Box, Flex, SimpleGrid, Text, theme } from "@chakra-ui/react";
-import dynamic from 'next/dynamic'
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
+import { ApexOptions } from 'apexcharts';
+import dynamic from 'next/dynamic'
 
 const Chart = dynamic(() => import('react-apexcharts'), {
     ssr: false,
 })
 
-const options = {
+const options: ApexOptions = {
     chart: {
         toolbar: {
             show: false,
@@ -24,7 +25,6 @@ const options = {
         enabled: false,
     },
     tooltip: {
-        enabled: 'false',
         theme: 'dark'
     },
     xaxis: {
