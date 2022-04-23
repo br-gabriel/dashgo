@@ -25,6 +25,7 @@ const options = {
     },
     tooltip: {
         enabled: 'false',
+        theme: 'dark'
     },
     xaxis: {
         type: 'datetime',
