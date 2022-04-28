@@ -12,9 +12,7 @@ import { GetServerSideProps } from "next";
 
 export default function UserList({ users }) {
   const [page, setPage] = useState(1);
-  const { data, isLoading, isFetching, error } = useUsers(page, {
-    initialData: users,
-  })
+  const { data, isLoading, isFetching, error } = useUsers(page)
 
   const isWideVersion = useBreakpointValue({
     base: false,
@@ -104,14 +102,4 @@ export default function UserList({ users }) {
       </Flex>
     </Box>
   );
-}
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  const { users, totalCount } = await getUsers(1)
-
-  return {
-    props: {
-      users,
-    }
-  }
 }
