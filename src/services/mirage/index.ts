@@ -31,7 +31,7 @@ export function makeServer() {
 
         //Define a quantidade de dados a serem criados
         seeds(server) {
-            server.createList('user', 200)
+            server.createList('user', 210)
         },
 
         routes() {
