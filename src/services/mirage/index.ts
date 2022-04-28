@@ -1,4 +1,4 @@
-import { createServer, Factory, Model, Response } from 'miragejs'
+import { createServer, Factory, Model, Response, ActiveModelSerializer } from 'miragejs'
 import { faker } from '@faker-js/faker'
 import { string } from 'yup';
 
@@ -10,6 +10,9 @@ type User = {
 
 export function makeServer() {
     const server = createServer({
+        serializers: {
+            application: ActiveModelSerializer,
+        },
         models: {
             user: Model.extend<Partial<User>>({})
         },
@@ -31,7 +34,7 @@ export function makeServer() {
 
         //Define a quantidade de dados a serem criados
         seeds(server) {
-            server.createList('user', 210)
+            server.createList('user', 5)
         },
 
         routes() {
