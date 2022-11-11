@@ -3,7 +3,7 @@
 
 ## Sobre o projeto
 Um projeto de uma dashboard simples, com dados estáticos, criado para entender funcionalidades do Next JS e a utilização do Chakra UI para 
-criação de estilização e animação.
+criação de estilização responsiva e animação.
 
 ## Tecnologias
 * ReactJS
