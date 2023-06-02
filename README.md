@@ -16,29 +16,31 @@ criação de estilização responsiva e animação.
 ### Instalação
 <strong>Clonar o repositório</strong>
 ```
-$ git clone https://github.com/br-gabriel/dtmoney-finance
+git clone https://github.com/br-gabriel/dtmoney-finance
+```
 
-$ cd dtmoney-finance
+```
+cd dtmoney-finance
 ```
 
 <strong>Instalação das dependências</strong>
 ```
-$ yarn
+yarn
 ```
 
 ou
 
 ```
-$ npm install
+npm install
 ```
 <strong>Rodando o projeto</strong>
 
 ```
-$ yarn start
+yarn start
 ```
 
 ou 
 
 ```
-$ npm run start
+npm run start
 ```
